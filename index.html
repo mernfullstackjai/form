@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Demo Form</title>
+        <link rel="stylesheet" href="assets/css/form.css">
+    </head>
+    
+
+<body>
+    <h1>BANK FORM</h1>
+    <form>
+        <label for="name">NAME</label>
+        <input type="text" 
+        placeholder="Enter your Name"
+        id="name"
+        name="name"
+        pattern="/^[a-z ,.'-]+$/i"
+        required
+        />
+        <br><br>
+        <label for="fname">FATHER'S NAME</label>
+        <input type="text" 
+        placeholder="Enter your Father Name"
+        id="fname"
+        name="fname"
+        pattern="/^[a-z ,.'-]+$/i"
+        required
+        />
+        <br><br>
+        <label for="mname">MOTHER'S NAME</label>
+        <input type="text" 
+        placeholder="Enter your Mother Name"
+        id="mname"
+        name="mname"
+        pattern="/^[a-z ,.'-]+$/i"
+        required
+        />
+        <br><br>
+        <label for="aadharno">Aadhar number</label>
+        <input type="text" 
+        placeholder="enter the Aadhar number"
+        id="aadharno"
+        name="aadharno"
+        pattern="(?=.*[0-9]){12}"
+        required
+        />
+        <br><br>
+        <label for="no">phone number</label>
+        <input type="text" 
+        placeholder="enter the phone number"
+        id="no"
+        name="no"
+        pattern="[0-9]{10}"
+        required
+        />
+        <br><br>
+        <label for="email-id">EMAIL</label>
+        <input type="text" 
+        placeholder="enter the email"
+        id="email-id"
+        name="email-id"
+        patter="[a-z][0-9]+@+[a-z]"
+        required
+        />
+        <br><br>
+        <label for="dob">DOB</label>
+        <input type="date" 
+        placeholder="enter the password"
+        id="dob"
+        name="dob"
+        required
+        />
+        <br><br>
+        <label for="gender">GENDER</label><br>
+        
+        <input type="radio" name="male">Male<br>
+        <input type="radio" name="male">Female<br>
+       
+        
+        <button class="button">REGISTER</button>        
+    </form>
+</body>
+</html>
